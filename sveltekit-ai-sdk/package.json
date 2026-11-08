@@ -1,0 +1,36 @@
+{
+	"name": "sveltekit-ai-sdk",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"imports": {
+		"#lib": "./src/lib/index.js",
+		"#lib/*": "./src/lib/*"
+	},
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^8.0.0",
+		"@sveltejs/kit": "^3.0.0",
+		"@sveltejs/vite-plugin-svelte": "^7.2.0",
+		"svelte": "^5.57.2",
+		"svelte-check": "^4.6.0",
+		"typescript": "^6.0.3",
+		"vite": "^8.3.0"
+	},
+	"dependencies": {
+		"@ai-sdk/anthropic": "^4.0.99",
+		"@aparte/core": "^1.0.1",
+		"@aparte/plugin-marked": "^1.0.1",
+		"@aparte/provider-ai-sdk": "^1.0.1",
+		"@aparte/svelte": "^1.0.1",
+		"ai": "^7.0.165",
+		"marked": "^18.1.3"
+	}
+}
