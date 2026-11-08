@@ -1,10 +1,15 @@
 version: 2
 updates:
   # Each example has its own lockfile: one update per example, aparté's packages together.
+  # Minor and patch versions only: a major can change the code an example, or an article
+  # built on it, shows, so it is done by hand.
   - package-ecosystem: npm
     directories: ['/*']
     schedule:
       interval: weekly
+    ignore:
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
     groups:
       aparte:
         patterns: ['@aparte/*']
