@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # Each example has its own lockfile: one update per example, aparté's packages together.
+  - package-ecosystem: npm
+    directories: ['/*']
+    schedule:
+      interval: weekly
+    groups:
+      aparte:
+        patterns: ['@aparte/*']
+      dependencies:
+        patterns: ['*']
+        exclude-patterns: ['@aparte/*']
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

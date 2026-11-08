@@ -1,0 +1,15 @@
+node_modules
+.svelte-kit
+build
+.output
+.vercel
+.netlify
+.wrangler
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
+Thumbs.db
+vite.config.*.timestamp-*
