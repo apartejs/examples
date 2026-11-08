@@ -41,3 +41,12 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm run build
+
+  # The one check main requires: it passes when every example does, however many there are.
+  all:
+    name: all examples
+    if: always()
+    needs: [list, example]
+    runs-on: ubuntu-latest
+    steps:
+      - run: test "${{ needs.list.result }}" = success && test "${{ needs.example.result }}" = success
