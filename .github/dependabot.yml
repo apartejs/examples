@@ -16,6 +16,16 @@ updates:
       dependencies:
         patterns: ['*']
         exclude-patterns: ['@aparte/*']
+  - package-ecosystem: pip
+    directories: ['/langgraph-ag-ui', '/pydantic-ai-ag-ui', '/google-adk-ag-ui']
+    schedule:
+      interval: weekly
+    ignore:
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
+    groups:
+      dependencies:
+        patterns: ['*']
   - package-ecosystem: github-actions
     directory: /
     schedule:
