@@ -26,10 +26,10 @@
 	},
 	"dependencies": {
 		"@ai-sdk/anthropic": "^4.0.99",
-		"@aparte/core": "^1.0.1",
-		"@aparte/plugin-marked": "^1.0.1",
-		"@aparte/provider-ai-sdk": "^1.0.1",
-		"@aparte/svelte": "^1.0.1",
+		"@aparte/core": "^1.0.2",
+		"@aparte/plugin-marked": "^1.0.2",
+		"@aparte/provider-ai-sdk": "^1.0.2",
+		"@aparte/svelte": "^1.0.2",
 		"ai": "^7.0.165",
 		"marked": "^18.1.3"
 	}
