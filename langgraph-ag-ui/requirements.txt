@@ -1,0 +1,7 @@
+ag-ui-langgraph==0.0.47
+fastapi==0.162.2
+httpx==0.28.1
+langchain-openai==1.7.4
+langgraph==1.2.20
+python-dotenv==1.2.4
+uvicorn==0.54.0
